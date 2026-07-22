@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char str[100];
+
+    printf("Enter a line: ");
+    fgets(str, 100, stdin);
+
+    if(str[0]=='/' && str[1]=='/')
+    {
+        printf("Single Line Comment");
+    }
+    else if(str[0]=='/' && str[1]=='*')
+    {
+        printf("Multi Line Comment");
+    }
+    else
+    {
+        printf("Not a Comment");
+    }
+
+    return 0;
+}
+output
+// This is a comment
+
+Single Line Comment
