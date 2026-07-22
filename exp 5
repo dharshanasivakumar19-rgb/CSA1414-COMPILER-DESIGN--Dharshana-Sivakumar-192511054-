@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main()
+{
+    char str[200];
+    int i = 0, space = 0, newline = 0;
+
+    printf("Enter the text:\n");
+
+    while((str[i] = getchar()) != EOF)
+    {
+        if(str[i] == ' ')
+            space++;
+        else if(str[i] == '\n')
+            newline++;
+
+        i++;
+    }
+
+    printf("Number of Whitespaces = %d\n", space);
+    printf("Number of Newline Characters = %d\n", newline);
+
+    return 0;
+}
+
+output
+Hello World
+Compiler Design
+
+Number of Whitespaces = 1
+Number of Newline Characters = 2
