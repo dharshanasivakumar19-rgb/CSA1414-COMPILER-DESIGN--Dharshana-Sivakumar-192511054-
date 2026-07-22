@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+    char ch;
+
+    printf("Enter an operator: ");
+    scanf("%c", &ch);
+
+    if(ch == '+')
+        printf("+ is an Addition Operator");
+    else if(ch == '-')
+        printf("- is a Subtraction Operator");
+    else if(ch == '*')
+        printf("* is a Multiplication Operator");
+    else if(ch == '/')
+        printf("/ is a Division Operator");
+    else
+        printf("Not an Arithmetic Operator");
+
+    return 0;
+}
+output
++
++ is an Addition Operator
